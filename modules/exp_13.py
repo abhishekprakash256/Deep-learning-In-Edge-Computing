@@ -97,6 +97,15 @@ class mobile_device:
                 task_and_time[i].append(random.randint(1, 1000))
         return task_and_time
 
+
+# making the action space in the device to choose from 
+
+    def action_space(self): #action space should be combination of x(m)t and y(m)t
+        action_set = ((0,0),(1,0),(0,1),(1,1)) #the action set 
+        return action_set   #choose according to equation 22                   
+
+    #make action choose accoriding to the equation 22
+
  # making the offload decision of the tasks in the ques
 
     def task_offload(self, task_and_time):
@@ -182,6 +191,8 @@ class mobile_device:
         #storing the values in this lst for the refrence
         trans_que_with_offload_var_lst = []
         #make the decision to offload to the edge node we define the ym(t)
+
+        
         
         for j in range(len(trans_que)):
             small_lst = []
@@ -219,8 +230,6 @@ class mobile_device:
     #calculation of the length of the que
     '''
     qm,nedge(t) = qm,n(t edge− 1) + λedgem,n (t) + edge #−fn ∆ 1 (m ∈ Bn (t)) − em,n(t) edge
- 
-    
     '''
 
     #let the task dropped be zero for now
@@ -238,6 +247,13 @@ class mobile_device:
                 q_m_n_lst.append(q_m_n)
         
         return q_m_n_lst
+
+    #make the state  sm(t) = λm (t), δmcomp(t), δmtran(t), qmedge(t − 1), H(t) 
+
+    def state(self):
+        print("s")
+
+
 
         
   
