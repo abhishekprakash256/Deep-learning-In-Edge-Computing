@@ -20,7 +20,7 @@ The project deals with the problem of the task offloading in the edge devices , 
 
 ## Illustration - 
 
-![](/media/abhi/Share 2/ra_work/professor_zhnag_ra_work/paper_implementation/steps.png)
+![](steps.png)
 
 
 
