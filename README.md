@@ -14,6 +14,10 @@ cd files/
 python3 exp_19.py
 ```
 
+### Dependicies 
+
+- check requirements.txt
+
 ### Steps - 
 
 - The task is generated with the random function with the an unique id.
